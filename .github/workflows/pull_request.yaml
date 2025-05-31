@@ -1,5 +1,5 @@
 name: push-workflow
-on: pull_request
+on: pull-request
 
 jobs:
   pull-request-job:
@@ -11,3 +11,5 @@ jobs:
         run: |
           echo hello world
           echo github action
+          
+          pull_request
