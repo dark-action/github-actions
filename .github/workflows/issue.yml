@@ -1,6 +1,6 @@
 name: push-workflow
 on:
-  issue:   # ← 여기서 하이픈(-)이 아니라 언더바(_)
+  issues:   # ← 여기서 하이픈(-)이 아니라 언더바(_)
     types: [opened]
 
 jobs:
