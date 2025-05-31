@@ -1,5 +1,5 @@
 name: push-workflow
-on: pull-request
+on: pull_request   # ← 여기서 하이픈(-)이 아니라 언더바(_)
 
 jobs:
   pull-request-job:
@@ -11,5 +11,3 @@ jobs:
         run: |
           echo hello world
           echo github action
-          
-          pull_request
