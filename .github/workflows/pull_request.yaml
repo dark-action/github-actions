@@ -1,5 +1,7 @@
 name: push-workflow
-on: pull_request   # ← 여기서 하이픈(-)이 아니라 언더바(_)
+on:
+  pull_request:   # ← 여기서 하이픈(-)이 아니라 언더바(_)
+    types: [opened]
 
 jobs:
   pull-request-job:
