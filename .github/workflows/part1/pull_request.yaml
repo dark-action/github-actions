@@ -1,4 +1,4 @@
-name: push-workflow
+name: push-workflow-test
 on:
   pull_request:   # ← 여기서 하이픈(-)이 아니라 언더바(_)
     types: [opened]
