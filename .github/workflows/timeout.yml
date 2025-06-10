@@ -14,8 +14,9 @@ jobs:
           while ture; do
               echo "seconds: $count"
               count=$((count + 1))
+              sleep 1  # 1분 동안 대기  
           done
       
-  
+
     - name: step2 echo
       run: echo "task completed"
