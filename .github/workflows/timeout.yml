@@ -11,7 +11,7 @@ jobs:
     - name: step1 loop
       run: |
           echo "Starting a loop that will run for 11 minutes..."
-          while ture; do
+          while true; do
               echo "seconds: $count"
               count=$((count + 1))
               sleep 1  # 1분 동안 대기  
