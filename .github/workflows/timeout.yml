@@ -1,0 +1,21 @@
+name: timeout
+on:
+  push:
+    branches: ['dev']
+
+jobs:
+  timeout-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1  # Job이 1분 후에 타임아웃됩니다.
+    steps:
+    - name: step1 loop
+      run: |
+          echo "Starting a loop that will run for 11 minutes..."
+          while ture; do
+              echo "seconds: $count"
+              count=$((count + 1))
+          done
+      
+  
+    - name: step2 echo
+      run: echo "task completed"
